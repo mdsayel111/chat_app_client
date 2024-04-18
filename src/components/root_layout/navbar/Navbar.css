@@ -1,0 +1,4 @@
+.active {
+  color: var(--primary);
+  background-color: rgba(173, 176, 179, 0.192);
+}
