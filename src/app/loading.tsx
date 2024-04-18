@@ -1,15 +1,12 @@
-import NoSSR from "@/components/no_ssr/NoSSR";
-import Lottie from "lottie-react";
+import Loading from "@/components/shared/loading/Loading";
 import { ImSpinner9 } from "react-icons/im";
-import loaderJSON from "../animation_json/loader.json"
 
 const Loader = () => {
   return (
-    <NoSSR>
-      <div className="h-screen flex items-center">
-        <Lottie animationData={loaderJSON} loop={true} />
-      </div>
-    </NoSSR>
+    <div className="h-screen flex items-center justify-center">
+      {/* <ImSpinner9 className="text-primary text-8xl animate-spin" /> */}
+      <Loading />
+    </div>
   );
 };
 
